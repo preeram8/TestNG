@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Suite">
+<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+        <test name="Test">
+        <parameter name="username" value="admin"/>
+        <parameter name="password" value="password"/>
+    <groups>
+        <run>
+            <!--<include name="HeaderTests" />-->
+            <!--<exclude name="HeaderTests" />-->
+        </run>
+    </groups>
+        <classes>
+               
+            <!--class name="Session17.DemoReportNG""/>-->
+              <!-- class name="testngactivities.Activity2"/>-->
+              <class name="TestNGSuite.DemoOne"/>
+            <class name="TestNGSuite.DemoTwo"/>
+            <class name="testngactivities.ClassActivity5"/>
+            <class name="testngactivities.ClassActivity6"/>
+             <class name="testngactivities.ClassActivity7"/>
+              <class name="testngactivities.ClassActivity9"/>
+               <class name="testngactivities.ClassActivity10"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
